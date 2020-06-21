@@ -26,6 +26,7 @@ pipeline {
                 branch 'developer'
                 //branch 'production'
             }
+            }
             
             steps {
                 echo 'developer'
