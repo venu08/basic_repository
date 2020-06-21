@@ -4,8 +4,8 @@ pipeline {
         stage('Example Build') {
             steps {
                 echo 'Hello World'
-                 echo 'environment  env: ${env.DEPLOY_TO}'
-                echo 'environment ${DEPLOY_TO}'
+                 echo "environment  env: ${env.DEPLOY_TO}"
+                echo "environment ${DEPLOY_TO}"
             }
         }
         stage('Example Deploy') {
