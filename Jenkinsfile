@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo 'Hello World'
                  echo "environment  env: ${env.DEPLOY_TO}"
-                echo "environment ${DEPLOY_TO}"
+                bat 'set'
             }
         }
         stage('Example Deploy') {
