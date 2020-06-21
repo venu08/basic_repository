@@ -19,11 +19,16 @@ pipeline {
         }
         stage('Development') {
             when {
-                branch 'developer'
+                
                 environment name: 'BRANCH_NAME', value: 'developer'
+                environment name: 'BRANCH_NAME', value: 'production'
+                branch 'developer'
+                branch 'production'
             }
             steps {
                 echo 'developer'
+                
+                echo "git brach ${GIT_BRANCH}"
             }
         }
     }
