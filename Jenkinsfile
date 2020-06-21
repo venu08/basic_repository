@@ -19,9 +19,10 @@ pipeline {
         }
         stage('Development') {
             when {
+                println "build from development"
                 environment name: 'BRANCH_NAME', value: 'developer'
                // environment name: 'BRANCH_NAME', value: 'production'
-                branch 'master'
+                branch 'developer'
                 //branch 'production'
             }
             steps {
