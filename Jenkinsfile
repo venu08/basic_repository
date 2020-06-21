@@ -32,6 +32,7 @@ pipeline {
                 echo 'developer'
                 
                 echo "git brach ${GIT_BRANCH}"
+                echo "environment  env: ${env.BRANCH_NAME}"
             }
         }
     }
