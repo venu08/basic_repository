@@ -23,7 +23,7 @@ pipeline {
                
                 environment name: 'BRANCH_NAME', value: 'developer'
                // environment name: 'BRANCH_NAME', value: 'production'
-                branch 'developer'
+                branch 'master'
                 //branch 'production'
             }
             }
