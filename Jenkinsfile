@@ -21,7 +21,7 @@ pipeline {
             when {
                 environment name: 'BRANCH_NAME', value: 'developer'
                // environment name: 'BRANCH_NAME', value: 'production'
-                branch 'production'
+                branch 'developer'
                 //branch 'production'
             }
             steps {
